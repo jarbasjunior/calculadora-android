@@ -21,3 +21,9 @@ Caso de Teste: Realizar operação de multiplicação com sucesso
     Home.Verificar resultado parcial "35"
     Home.Clicar no botão de resultado
     Home.Verificar resultado final "35"
+
+Caso de Teste: Realizar operação de divisão com sucesso
+    Home.Digitar dois números para divisão "8" E "2"
+    Home.Verificar resultado parcial "4"
+    Home.Clicar no botão de resultado
+    Home.Verificar resultado final "4"
