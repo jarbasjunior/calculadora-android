@@ -17,11 +17,19 @@ Digitar dois números para soma "${PRIMEIRO_NUMERO}" e "${SEGUNDO_NUMERO}"
     Clicar no operador de soma
     Clicar no número "${SEGUNDO_NUMERO}"
 
+Digitar dois números para subtração "${PRIMEIRO_NUMERO}" e "${SEGUNDO_NUMERO}"
+    Clicar no número "${PRIMEIRO_NUMERO}"
+    Clicar no operador de subtração
+    Clicar no número "${SEGUNDO_NUMERO}"
+
 Clicar no número "${NUMERO}"
     Click Element       xpath=//android.widget.Button[@text="${NUMERO}"]
 
 Clicar no operador de soma
     Click Element       ${HOME_BTN_SOMAR}
+
+Clicar no operador de subtração
+    Click Element       ${HOME_BTN_SUBTRAIR}
 
 Verificar resultado parcial "${RESULTADO}"
     ${RES_PARCIAL_ENCONTRADO}       Get Text        ${HOME_FIELD_RES_PARCIAL}
