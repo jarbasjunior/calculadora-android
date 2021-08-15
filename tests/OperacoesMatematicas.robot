@@ -15,3 +15,9 @@ Caso de Teste: Realizar operação de subtração com sucesso
     Home.Verificar resultado parcial "6"
     Home.Clicar no botão de resultado
     Home.Verificar resultado final "6"
+
+Caso de Teste: Realizar operação de multiplicação com sucesso
+    Home.Digitar dois números para multiplicação "7" E "5"
+    Home.Verificar resultado parcial "35"
+    Home.Clicar no botão de resultado
+    Home.Verificar resultado final "35"
