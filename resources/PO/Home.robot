@@ -1,5 +1,6 @@
 *** Settings ***
 Library    AppiumLibrary
+Library    Collections
 
 *** Variables ***
 ${HOME_BTN_SOMAR}             id=op_add
@@ -33,7 +34,10 @@ Digitar dois números para divisão "${PRIMEIRO_NUMERO}" e "${SEGUNDO_NUMERO}"
     Clicar no número "${SEGUNDO_NUMERO}"
 
 Clicar no número "${NUMERO}"
-    Click Element       xpath=//android.widget.Button[@text="${NUMERO}"]
+    @{CHARACTERS} =  Convert To List  ${NUMERO}
+    FOR  ${CHARACTER}  IN  @{CHARACTERS}
+        Click Element      xpath=//android.widget.Button[@text="${CHARACTER}"]
+    END  
 
 Clicar no operador de soma
     Click Element       ${HOME_BTN_SOMAR}
